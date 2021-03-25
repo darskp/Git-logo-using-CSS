@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0%;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: 'Dela Gothic One',
+                cursive;
+        }
+
+        html {
+            font-size: 65.2%;
+            height: 100%;
+        }
+
+        :root {
+            --bg-color: #2d3436;
+            --text-animation-slide-color: #dfe6e9;
+        }
+
+        .main-div {
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--bg-color);
+            display: -ms-grid;
+            display: grid;
+            place-items: center;
+        }
+
+        .main-div .center {
+            width: 25rem;
+            height: 25rem;
+            background-color: #f05010;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-box-shadow: 0.1rem 0.3rem 1.9rem 0rem #4d4d4e;
+            box-shadow: 0.1rem 0.3rem 1.9rem 0rem #4d4d4e;
+            border-radius: 2rem;
+            position: relative;
+        }
+
+        .main-div .center .line1 {
+            width: 20rem;
+            height: 2rem;
+            background-color: white;
+            top: 6rem;
+            left: 0;
+            position: absolute;
+        }
+
+        .main-div .center .line1::before {
+            content: " ";
+            width: 4.5rem;
+            height: 4.5rem;
+            background-color: white;
+            position: absolute;
+            right: -1rem;
+            top: -1.3rem;
+            border-radius: 50%;
+        }
+
+        .main-div .center .line1::after {
+            content: " ";
+            width: 4.5rem;
+            height: 4.5rem;
+            background-color: white;
+            position: absolute;
+            right: 10rem;
+            top: -1.3rem;
+            border-radius: 50%;
+        }
+
+        .main-div .center .line2 {
+            width: 17rem;
+            height: 2rem;
+            background-color: white;
+            top: 12rem;
+            right: 3rem;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            position: absolute;
+        }
+
+        .main-div .center .line2::before {
+            content: " ";
+            width: 4.5rem;
+            height: 4.5rem;
+            background-color: white;
+            position: absolute;
+            right: -1rem;
+            top: -1.3rem;
+            border-radius: 50%;
+        }
+
+        /*# sourceMappingURL=var.css.map */
+    </style>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="center">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+    </div>
+</body>
+
+</html>
